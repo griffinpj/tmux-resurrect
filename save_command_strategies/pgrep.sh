@@ -11,7 +11,7 @@ exit_safely_if_empty_ppid() {
 }
 
 full_command() {
-	\pgrep -lf -P "$PANE_PID" |
+	\pgrep -af -P "$PANE_PID" |
 		cut -d' ' -f2-
 }
 
